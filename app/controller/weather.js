@@ -10,21 +10,17 @@ class WeatherController extends Controller {
     async index() {
         const ctx = this.ctx;
         const query = {
-            limit: toInt(ctx.query.limit),
-            offset: toInt(ctx.query.offset)
+            order:[
+                "id",
+                ["id","desc"]
+            ],
+            limit:1 // 取最新的一条
         };
-        ctx.body = await ctx.model.Weather.findAll(query);
-    }
-
-    async show() {
-        const ctx = this.ctx;
-        const user = await ctx.model.Weather.findById(toInt(ctx.params.id));
-        if (!user) {
-            this.ctx.throw(404, 'user not found');
+        const data = await ctx.model.Weather.findAll(query);
+        if (!data) {
+            this.ctx.throw(404, 'data not found');
         }
-        ctx.body = user;
-        // return user;
-        // ctx.body = await ctx.model.Weather.findById(toInt(ctx.params.id));
+        ctx.body = data;
     }
 
     async create() {

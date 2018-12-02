@@ -1,6 +1,6 @@
 module.exports = {
     schedule: {
-        interval: '1h',
+        interval: '5h',
         type: 'worker',
         immediate: true
     },

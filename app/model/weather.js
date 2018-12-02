@@ -5,7 +5,7 @@ module.exports = app => {
         DATE
     } = app.Sequelize;
 
-    const Weather = app.model.define('hangzhou', {
+    const Weather = app.model.define('pm25', {
         id: {
             type: INTEGER,
             primaryKey: true,
@@ -13,10 +13,10 @@ module.exports = app => {
         },
         aqi: INTEGER,
         date: DATE,
-        created_at: DATE,
-        updated_at: DATE,
+        city: STRING
     }, {
-        freezeTableName: true
+        freezeTableName: true,
+        timestamps: false
     });
 
     return Weather;
