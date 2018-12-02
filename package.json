@@ -4,9 +4,11 @@
   "description": "主要城市空气质量",
   "private": true,
   "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
     "egg": "^2.2.1",
     "egg-scripts": "^2.5.0",
     "egg-sequelize": "^4.2.0",
+    "http": "0.0.0",
     "mysql2": "^1.6.4"
   },
   "devDependencies": {
