@@ -13,7 +13,8 @@ module.exports = app => {
         },
         aqi: INTEGER,
         date: DATE,
-        city: STRING
+        city: STRING,
+        desc: STRING
     }, {
         freezeTableName: true,
         timestamps: false

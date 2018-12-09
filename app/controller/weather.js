@@ -10,11 +10,11 @@ class WeatherController extends Controller {
     async index() {
         const ctx = this.ctx;
         const query = {
-            order:[
+            order: [
                 "id",
-                ["id","desc"]
+                ["id", "desc"]
             ],
-            limit:1 // 取最新的一条
+            limit: 1 // 取最新的一条
         };
         const data = await ctx.model.Weather.findAll(query);
         if (!data) {
