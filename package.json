@@ -26,7 +26,7 @@
     "node": ">=8.9.0"
   },
   "scripts": {
-    "start": "egg-scripts start --daemon --title=egg-server-pm25",
+    "start": "egg-scripts start --port=10001 --daemon --title=egg-server-pm25",
     "stop": "egg-scripts stop --title=egg-server-pm25",
     "dev": "egg-bin dev",
     "debug": "egg-bin debug",
