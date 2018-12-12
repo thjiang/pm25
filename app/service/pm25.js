@@ -19,7 +19,11 @@ class Pm25Service extends Service {
             }
         });
 
-        return result.data;
+        return {
+            location: result.data.HeWeather6[0].basic.location,
+            aqi: result.data.HeWeather6[0].air_now_city.aqi,
+            qlty: result.data.HeWeather6[0].air_now_city.qlty
+        };
     }
 }
 module.exports = Pm25Service;

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>空气质量</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Bree Serif", "Open Sans", "Arial", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", sans-serif;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        body {
+            background: #f6f9fe url('https://mat1.gtimg.com/pingjs/ext2020/weather/2017/images/bg-2822af15f8.jpg') no-repeat center top;
+        }
+
+        .main {
+            width: 800px;
+            height: 400px;
+            margin: 0 auto;
+            color: #c3f0e1;
+            font-weight: lighter;
+        }
+
+        .main .city {
+            height: 85px;
+            width: 100%;
+            padding: 50px 0 0 0;
+            font-size: 50px;
+            border-bottom: 1px solid #c3f0e1;
+        }
+
+        .main .aqi-wrap {
+            position: relative;
+            margin-top: 36px;
+            width: 270px;
+            height: 100px;
+            font-size: 100px;
+        }
+
+        .aqi-wrap .desc {
+            position: absolute;
+            top: 45px;
+            right: 0;
+            width: 80px;
+            height: 24px;
+            line-height: 24px;
+            font-size: 14px;
+            text-align: center;
+            background: #ec7e22;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .aqi-wrap .aqi {
+            color: #ffffdc;
+        }
+
+        .aqi-wrap .tip {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 80px;
+            height: 24px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .all {
+            height: 200px;
+            margin: 130px auto 40px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 14px 0 rgba(0, 0, 0, .08);
+            width: 800px;
+            padding: 20px 30px 27px;
+            overflow: hidden;
+        }
+
+        .all .title {
+            font-size: 18px;
+            font-weight: 400;
+            color: #344665;
+            line-height: 25px;
+            height: 25px;
+            margin-bottom: 18px;
+            margin-left: 30px;
+        }
+
+        ul li {
+            padding-top: 30px;
+            width: 88px;
+            float: left;
+            text-align: center;
+            font-size: 16px;
+            color: #384c78;
+        }
+
+        li .aqi {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        li .desc {
+            width: 66px;
+            height: 20px;
+            line-height: 20px;
+            margin: 20px auto;
+            font-size: 12px;
+            background: #ec7e22;
+            border-radius: 3px;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="main">
+        <div class="city">杭州</div>
+        <div class="aqi-wrap">
+            <div class="aqi">124</div>
+            <div class="desc">轻度污染</div>
+            <div class="tip">AQI指数</div>
+        </div>
+    </section>
+    <section class="all">
+        <h2 class="title">其他城市</h2>
+        <ul>
+            <li>
+                <div class="city">厦门</div>
+                <div class="aqi">124</div>
+                <div class="desc">轻度污染</div>
+            </li>
+            <li>
+                <div class="city">成都</div>
+                <div class="aqi">58</div>
+                <div class="desc">良</div>
+            </li>
+            <li>
+                <div class="city">三亚</div>
+                <div class="aqi">9</div>
+                <div class="desc">优</div>
+            </li>
+            <li>
+                <div class="city">三亚</div>
+                <div class="aqi">9</div>
+                <div class="desc">优</div>
+            </li>
+            <li>
+                <div class="city">三亚</div>
+                <div class="aqi">9</div>
+                <div class="desc">优</div>
+            </li>
+            <li>
+                <div class="city">三亚</div>
+                <div class="aqi">9</div>
+                <div class="desc">优</div>
+            </li>
+            <li>
+                <div class="city">三亚</div>
+                <div class="aqi">9</div>
+                <div class="desc">优</div>
+            </li>
+            <li>
+                <div class="city">三亚</div>
+                <div class="aqi">9</div>
+                <div class="desc">优</div>
+            </li>
+            <li>
+                <div class="city">三亚</div>
+                <div class="aqi">9</div>
+                <div class="desc">优</div>
+            </li>
+        </ul>
+    </section>
+</body>
+
+</html>
